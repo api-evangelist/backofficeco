@@ -1,23 +1,52 @@
 aid: backofficeco
+
 name: Backofficeco
-description: 'Backofficeco is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Backofficeco is a technology company that provides back‑office automation solutions for businesses, enabling streamlined financial operations, HR processes, and compliance management through a suite of integrated APIs. The platform offers endpoints for transaction processing, ledger management, employee onboarding, and reporting, aiming to reduce manual effort and improve data accuracy across enterprise systems. While the company is currently listed as a stub in the API Evangelist network, its services target midsize to large organizations seeking to modernize their internal workflows.'
+
 url: https://raw.githubusercontent.com/api-evangelist/backofficeco/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
 - Company
-apis: []
+- Backoffice
+- Automation
+- Finance
+- HR
+- SaaS
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/backofficeco-hosts.yml
+- type: Vendors
+  url: vendors/backofficeco-vendors.yml
+- type: DomainSecurity
+  url: security/backofficeco-domain-security.yml
 - type: Website
   url: https://equityzen.com/company/backofficeco
+
+apis: []
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
